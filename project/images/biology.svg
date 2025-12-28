@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#27ae60" opacity="0.1"/>
+  
+  <!-- DNA double helix -->
+  <!-- Left strand -->
+  <path d="M 70 50 Q 65 80 70 110 Q 75 140 70 170" fill="none" stroke="#27ae60" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Right strand -->
+  <path d="M 130 50 Q 135 80 130 110 Q 125 140 130 170" fill="none" stroke="#27ae60" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Connecting base pairs -->
+  <line x1="70" y1="65" x2="130" y2="65" stroke="#27ae60" stroke-width="3"/>
+  <line x1="68" y1="95" x2="132" y2="95" stroke="#27ae60" stroke-width="3"/>
+  <line x1="70" y1="125" x2="130" y2="125" stroke="#27ae60" stroke-width="3"/>
+  <line x1="72" y1="155" x2="128" y2="155" stroke="#27ae60" stroke-width="3"/>
+  
+  <!-- Center nodes -->
+  <circle cx="75" cy="80" r="4" fill="#27ae60"/>
+  <circle cx="125" cy="80" r="4" fill="#27ae60"/>
+  <circle cx="72" cy="110" r="4" fill="#27ae60"/>
+  <circle cx="128" cy="110" r="4" fill="#27ae60"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#3498db"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="70" r="35" fill="#ecf0f1"/>
+  
+  <!-- Body -->
+  <path d="M 65 105 Q 65 140 100 140 Q 135 140 135 105" fill="#ecf0f1"/>
+  
+  <!-- Shoulders -->
+  <ellipse cx="100" cy="125" rx="40" ry="20" fill="#3498db" opacity="0.3"/>
+  
+  <!-- Face details -->
+  <circle cx="90" cy="65" r="4" fill="#2c3e50"/>
+  <circle cx="110" cy="65" r="4" fill="#2c3e50"/>
+  <path d="M 95 80 Q 100 85 105 80" fill="none" stroke="#2c3e50" stroke-width="2" stroke-linecap="round"/>
+</svg>

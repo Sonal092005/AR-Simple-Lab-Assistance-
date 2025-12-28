@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <circle cx="100" cy="100" r="95" fill="#27ae60" opacity="0.1"/>
+  
+  <!-- Cell membrane -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#27ae60" stroke-width="3"/>
+  
+  <!-- Nucleus -->
+  <circle cx="100" cy="85" r="25" fill="#27ae60" opacity="0.3" stroke="#27ae60" stroke-width="2"/>
+  
+  <!-- Nucleolus -->
+  <circle cx="100" cy="85" r="10" fill="#27ae60" opacity="0.6"/>
+  
+  <!-- Mitochondria -->
+  <ellipse cx="65" cy="120" rx="12" ry="20" fill="none" stroke="#27ae60" stroke-width="2"/>
+  <line x1="60" y1="115" x2="70" y2="125" stroke="#27ae60" stroke-width="1.5"/>
+  
+  <ellipse cx="135" cy="115" rx="12" ry="20" fill="none" stroke="#27ae60" stroke-width="2"/>
+  <line x1="130" y1="110" x2="140" y2="120" stroke="#27ae60" stroke-width="1.5"/>
+  
+  <!-- Ribosomes -->
+  <circle cx="80" cy="75" r="4" fill="#27ae60"/>
+  <circle cx="120" cy="78" r="4" fill="#27ae60"/>
+  <circle cx="85" cy="55" r="4" fill="#27ae60"/>
+  
+  <!-- Cytoplasm particles -->
+  <circle cx="70" cy="90" r="3" fill="#27ae60" opacity="0.5"/>
+  <circle cx="110" cy="105" r="3" fill="#27ae60" opacity="0.5"/>
+  
+  <text x="100" y="170" font-size="12" fill="#27ae60" text-anchor="middle" font-weight="bold">Plant Cell</text>
+</svg>

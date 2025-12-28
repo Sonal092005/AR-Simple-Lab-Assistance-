@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Lab Assistant - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Intro overlay with project-suited video */
+        .video-overlay { position: fixed; inset: 0; background: #05060a; display: flex; align-items: center; justify-content: center; z-index: 1000; overflow: hidden; color: #fff; text-align: center; padding: 32px; }
+        .video-overlay::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.12), transparent 45%), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.12), transparent 50%); pointer-events: none; }
+        #intro-video { width: 100%; height: 100%; max-width: 100vw; max-height: 100vh; object-fit: cover; filter: saturate(1.08) contrast(1.05); opacity: 0.96; }
+        .intro-hero { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; padding: 24px; z-index: 1; pointer-events: none; text-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+        .intro-hero h1 { font-size: clamp(2.2rem, 4.8vw, 3.4rem); letter-spacing: 0.4px; margin: 0; }
+        .intro-hero p { font-size: 1.05rem; opacity: 0.9; max-width: 640px; }
+        .intro-tags { display: inline-flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .intro-tags span { padding: 9px 13px; border-radius: 12px; background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.25); font-weight: 700; }
+        #skip-video { position: absolute; bottom: 24px; right: 24px; padding: 12px 18px; background: rgba(255,255,255,0.94); border: none; border-radius: 999px; cursor: pointer; box-shadow: 0 10px 24px rgba(0,0,0,0.18); font-weight: 700; z-index: 2; }
+    </style>
+</head>
+<body>
+    <section id="login-screen">
+        <div class="card">
+            <h2>Welcome to AR Lab Assistant</h2>
+            <form id="login-form" autocomplete="off">
+                <input type="text" id="username" placeholder="Enter Username" required autocomplete="new-password">
+                <input type="password" id="password" placeholder="Enter Password" required autocomplete="new-password">
+                <button type="submit">Login</button>
+                <p id="login-error" class="error-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Clear inputs on page load and after a delay to prevent autofill
+        window.addEventListener('DOMContentLoaded', function() {
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+            
+            usernameInput.value = '';
+            passwordInput.value = '';
+            
+            // Clear again after autofill attempts
+            setTimeout(function() {
+                usernameInput.value = '';
+                passwordInput.value = '';
+            }, 100);
+        });
+
+        // JavaScript for Login Validation and Redirection
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Accept any credentials: store username and go to dashboard
+            localStorage.setItem("userName", username || "User");
+            window.location.href = "dashboard.html";
+        });
+    </script>
+</body>
+</html>

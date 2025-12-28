@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#0c92a0" opacity="0.1"/>
+  
+  <!-- Atom nucleus -->
+  <circle cx="100" cy="100" r="15" fill="#0c92a0"/>
+  
+  <!-- Electron orbits -->
+  <ellipse cx="100" cy="100" rx="50" ry="30" fill="none" stroke="#0c92a0" stroke-width="3"/>
+  <ellipse cx="100" cy="100" rx="40" ry="50" fill="none" stroke="#0c92a0" stroke-width="3" transform="rotate(45 100 100)"/>
+  
+  <!-- Electrons -->
+  <circle cx="150" cy="100" r="8" fill="#0c92a0"/>
+  <circle cx="85" cy="150" r="8" fill="#0c92a0"/>
+  <circle cx="65" cy="70" r="8" fill="#0c92a0"/>
+  
+  <!-- Central glow -->
+  <circle cx="100" cy="100" r="20" fill="#0c92a0" opacity="0.3"/>
+</svg>

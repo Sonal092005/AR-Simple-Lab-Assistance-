@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#4A90E2"/>
+  <circle cx="100" cy="80" r="30" fill="#FFD700"/>
+  <rect x="85" y="120" width="30" height="50" fill="#FF6B6B"/>
+  <circle cx="70" cy="140" r="15" fill="#95E1D3"/>
+  <circle cx="130" cy="150" r="15" fill="#95E1D3"/>
+  <text x="100" y="190" font-size="16" font-weight="bold" text-anchor="middle" fill="white">PHYSICS</text>
+</svg>

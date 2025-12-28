@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Lab Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="profile-section">
+            <img src="images/profile-placeholder.svg" alt="Profile" class="profile-pic">
+            <div class="profile-info">
+                <span id="user-name">User</span>
+            </div>
+        </div>
+        <button id="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+
+    <div class="dashboard-container">
+        <h1>Select Your Lab</h1>
+        
+        <div class="subjects-grid">
+            <div class="subject-card" onclick="window.location.href='physics-lab.html'">
+                <img src="images/physics.svg" alt="Physics">
+                <div class="card-content">
+                    <h2>Physics Lab</h2>
+                    <p>Explore mechanics, waves, and more</p>
+                </div>
+                <div class="card-shadow"></div>
+            </div>
+
+            <div class="subject-card" onclick="window.location.href='chemistry-lab.html'">
+                <img src="images/chemistry.svg" alt="Chemistry">
+                <div class="card-content">
+                    <h2>Chemistry Lab</h2>
+                    <p>Conduct virtual chemical experiments</p>
+                </div>
+                <div class="card-shadow"></div>
+            </div>
+
+            <div class="subject-card" onclick="window.location.href='biology-lab.html'">
+                <img src="images/biology.svg" alt="Biology">
+                <div class="card-content">
+                    <h2>Biology Lab</h2>
+                    <p>Study life sciences in AR</p>
+                </div>
+                <div class="card-shadow"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Set username from localStorage; redirect if missing
+        window.addEventListener('DOMContentLoaded', function () {
+            const userName = localStorage.getItem('userName');
+            if (userName) {
+                document.getElementById('user-name').textContent = userName;
+            } else {
+                window.location.href = 'index.html';
+            }
+        });
+
+        function logout() {
+            localStorage.removeItem('userName');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
