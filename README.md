@@ -1,110 +1,145 @@
-🧪 AR Simple Lab Assistance (AR Diagram Explorer)
+🧪 AR Simple Lab Assistance
 
-An Augmented Reality–based educational web application designed to help students visualize scientific concepts using interactive 3D models. The project enhances learning in Physics, Chemistry, and Biology by allowing users to explore diagrams and models in an intuitive, visual manner.
+🔗 Live Demo:
+https://sonal092005.github.io/AR-Simple-Lab-Assistance-/
 
 📌 Project Overview
 
-Traditional textbook diagrams often fail to convey complex scientific structures effectively.
-AR Simple Lab Assistance bridges this gap by providing 3D models and AR-enabled visualizations, making abstract concepts easier to understand.
+AR Simple Lab Assistance is a web-based Augmented Reality (AR) learning platform designed to help students visualize laboratory experiments and scientific concepts in an interactive way. The project uses 3D models, AR markers, and web technologies to enhance understanding of Physics, Chemistry, and Biology experiments.
 
-This project is especially useful for:
+This application is especially useful for:
 
-School & college students
+- Students learning science concepts
 
-Virtual labs
+- Virtual lab demonstrations
 
-Self-learning and concept revision
+- Interactive and immersive education
 
-✨ Key Features
+🎯 Objectives
 
-📐 3D Interactive Models for science concepts
+- Provide an interactive AR-based lab learning experience
 
-🧬 Subject-wise content: Biology, Chemistry, Physics
+- Visualize complex scientific models in 3D
 
-🧪 Realistic visualization of molecules, cells, and lab equipment
+- Improve conceptual understanding through real-time interaction
 
-🌐 Web-based application (no installation required)
+- Enable easy access via web browser (no app installation required)
 
-🎯 Beginner-friendly and intuitive UI
+🧠 Key Features
+
+🔐 Login & Dashboard System
+
+🧪 Subject-wise Lab Experiments
+
+- Physics Lab
+
+-  Chemistry Lab
+
+- Biology Lab
+
+🧊 3D AR Models (GLB format)
+
+📱 Camera-based AR Interaction
+
+🌐 Fully Web-Based (GitHub Pages Deployment)
+
+💻 Responsive UI
 
 🛠️ Technologies Used
 
-HTML5
+- HTML5
 
-CSS3
+- CSS3
 
-JavaScript
+- JavaScript
 
-Node.js
+- A-Frame
 
-Express.js
+- AR.js
 
-Model Viewer (for 3D & AR models)
+- WebXR
 
-GLB / SVG assets
+- GitHub Pages (Deployment)
 
-📁 Project Structure
-AR-Diagram-Explorer/
+📂 Project Structure
+AR-Simple-Lab-Assistance/
 │
-├── project/
-│   ├── images/
-│   │   ├── biology.svg
-│   │   ├── chemistry.svg
-│   │   ├── physics.svg
-│   │   ├── microscope.glb
-│   │   └── other 3D models
-│
-├── package.json
-├── package-lock.json
-├── .gitignore
+├── index.html
+├── dashboard.html
+├── intro.html
+├── biology-lab.html
+├── chemistry-lab.html
+├── physics-lab.html
+├── styles.css
+├── app.js
+├── scripts.js
+├── images/
+│   └── (3D models, icons, assets)
+├── videos/
+│   └── ARlab.mp4
 └── README.md
 
-🚀 How to Run the Project Locally
-1️⃣ Clone the repository
-git clone https://github.com/Sonal092005/AR-Diagram-Explorer.git
+🚀 How to Run Locally
 
-2️⃣ Navigate to the project directory
-cd AR-Diagram-Explorer
+Clone the repository:
 
-3️⃣ Install dependencies
-npm install
+git clone https://github.com/Sonal092005/AR-Simple-Lab-Assistance-.git
 
-4️⃣ Start the server
-npm start
 
-5️⃣ Open in browser
-http://localhost:3000
+Navigate to the folder:
 
-🎓 Educational Impact
+cd AR-Simple-Lab-Assistance-
 
-Improves conceptual understanding through visualization
 
-Reduces dependency on physical lab infrastructure
+Open index.html in a browser
+(Use Chrome / Edge for best AR support)
 
-Encourages interactive and experiential learning
+🌍 Deployment
 
-Supports AR-based modern education systems
+The project is deployed using GitHub Pages.
 
-📌 Future Enhancements
+Branch: main
 
-📱 Mobile AR support
+Folder: /root
 
-🧠 Quiz & assessment integration
+URL:
+👉 https://sonal092005.github.io/AR-Simple-Lab-Assistance-/
 
-📊 User progress tracking
+📸 Screenshots 
 
-🌍 Deployment with cloud hosting
+<img width="1852" height="915" alt="Screenshot 2025-12-28 143608" src="https://github.com/user-attachments/assets/9613cd4e-8353-4b5b-bbc4-00315cc6cf69" />
+<img width="1861" height="909" alt="Screenshot 2025-12-28 143635" src="https://github.com/user-attachments/assets/85d0e113-4675-4104-906e-fc9c04db9c21" />
+<img width="1830" height="905" alt="Screenshot 2025-12-28 143700" src="https://github.com/user-attachments/assets/3aa256d3-6b3b-4cb6-b597-81daaef5c0d4" />
+<img width="1825" height="906" alt="Screenshot 2025-12-28 143713" src="https://github.com/user-attachments/assets/7b6b8a49-5846-4864-994c-c95b560ae0b6" />
+<img width="1836" height="892" alt="Screenshot 2025-12-28 143755" src="https://github.com/user-attachments/assets/b87bb42c-b463-49cf-b3c6-65f14fd8fa67" />
 
-🧪 More scientific models and experiments
+
+🔮 Future Enhancements
+
+- Add more lab experiments
+
+- Markerless AR support
+
+- User authentication with database
+
+- Performance optimization for mobile devices
+
+- Voice-based AR guidance
 
 👩‍💻 Author
 
 Sonal M Sangapur
-B.E. – Information Science & Engineering
+B.E. Information Science & Engineering
 PDA College of Engineering, Kalaburagi
+
+📧 Email: sangapursonal@gmail.com
 
 🔗 GitHub: https://github.com/Sonal092005
 
-📄 License
+⭐ Acknowledgements
 
-This project is for educational and academic use.
+A-Frame & AR.js Community
+
+Open-source 3D model contributors
+
+Academic mentors and peers
